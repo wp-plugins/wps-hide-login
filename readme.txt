@@ -1,6 +1,6 @@
 === WPS Hide Login ===
 
-Contributors: Tabrisrp, WPServeur
+Contributors: tabrisrp, WPServeur
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=6V74BBTNMWW38&lc=FR&item_name=Rémy%20Perona&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted
 Tags: rename, login, wp-login, wp-login.php, custom login url, admin
 Requires at least: 4.1
