@@ -1,11 +1,10 @@
 === WPS Hide Login ===
 
-Contributors: tabrisrp, WPServeur
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=6V74BBTNMWW38&lc=FR&item_name=Rémy%20Perona&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted
-Tags: rename, login, wp-login, wp-login.php, custom login url, admin
+Contributors: Tabrisrp, WPServeur
+Tags: rename, login, wp-login, wp-login.php, custom login url
 Requires at least: 4.1
 Tested up to: 4.2
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -36,17 +35,25 @@ If you’re using a **page caching plugin** you should add the slug of the new l
 
 https://github.com/tabrisrp/wps-hide-login
 
+= Description Française =
+WPS Hide Login est un plugin très léger qui vous permet facilement et en toute sécurité de modifier l'URL de connexion en ce que vous voulez.
+
+Il ne renomme pas ou ne modifie pas de fichiers dans le noyau, et n'ajoute pas de règles de réécriture.  Il intercepte tout simplement les demandes de page et fonctionne sur n'importe quel site WordPress.
+
+La page wp-login.php et le répertoire wp-admin deviennent donc inaccessibles, vous devrez donc bookmarker ou vous rappeler l'url. Désactiver ce plugin ramène tout simplement votre site à son état initial.
+
+Compatibilité
+Nécessite WordPress 4.1 ou supérieur.
+
+Si vous utilisez un plugin de cache, vous devrez ajouter la nouvelle URL de connexion à la liste des pages à ne pas mettre en cache.
+
 == Installation ==
 
 1. Go to Plugins › Add New.
 2. Search for *WPS Hide Login*.
 3. Look for this plugin, download and activate it.
 4. The page will redirect you to the settings. Change your login url there.
-5. You can change this option any time you want, just go back to Settings › Permalinks › WPS Hide Login.
-
-== Screenshots ==
-1. The new section in the Permalinks settings panel on a single site
-2. The section in the network settings for a multisite configuration
+5. You can change this option any time you want, just go back to Settings › General › WPS Hide Login.
 
 == Frequently Asked Questions ==
 
@@ -57,6 +64,13 @@ Either go to your MySQL database and look for the value of `whl_page` in the opt
 On a multisite install the `whl_page` option will be in the sitemeta table, if there is no such option in the options table.
 
 == Changelog ==
+
+= 1.1 =
+* Fix : CSRF security issue when saving option value in single site and multisite mode. Thanks to @Secupress
+* Improvement : changed option location from permalinks to general, because register_setting doesn't work on permalinks page.
+* Improvement : notice after saving is now dismissible (compatibility with WP 4.2)
+* Uninstall function is now in it's separate file uninstall.php
+* Some cleaning and reordering of code
 
 = 1.0 =
 
