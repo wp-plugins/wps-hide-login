@@ -55,6 +55,10 @@ Si vous utilisez un plugin de cache, vous devrez ajouter la nouvelle URL de conn
 4. The page will redirect you to the settings. Change your login url there.
 5. You can change this option any time you want, just go back to Settings › General › WPS Hide Login.
 
+== Screenshots ==
+1. Setting on single site installation
+2. Setting for network wide
+
 == Frequently Asked Questions ==
 
 = I forgot my login url!  =
