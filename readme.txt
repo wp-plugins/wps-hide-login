@@ -1,6 +1,6 @@
 === WPS Hide Login ===
 
-Contributors: Tabrisrp, WPServeur
+Contributors: tabrisrp, WPServeur
 Tags: rename, login, wp-login, wp-login.php, custom login url
 Requires at least: 4.1
 Tested up to: 4.2
